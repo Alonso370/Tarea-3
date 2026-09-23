@@ -1,0 +1,31 @@
+:root { --ink: #eff0e8; --muted: #a4ada9; --accent: #c5ee91; }
+.stApp { background: #101715; color: var(--ink); }
+.stMainBlockContainer { max-width: 1120px; padding: 2.5rem 3rem 2rem; }
+.masthead { display: flex; justify-content: space-between; gap: 1rem; align-items: center; border-bottom: 1px solid #34403a; padding-bottom: 1.3rem; }
+.brand { color: var(--accent); font-size: .9rem; font-weight: 700; letter-spacing: .14em; }
+.masthead-note { font-size: .875rem; color: var(--muted); }
+.intro { padding: 3.5rem 0 2.8rem; }
+.eyebrow { color: var(--accent); font-size: .78rem; letter-spacing: .15em; font-weight: 600; margin: 0 0 .9rem; }
+.intro h1 { font-size: clamp(2.7rem, 6vw, 4.8rem); letter-spacing: -.055em; line-height: 1.07; font-weight: 600; padding: 0; margin: 0 0 1.4rem; color: var(--ink); }
+.intro h1 span { color: var(--accent); }
+.intro-copy { font-size: 1.05rem; line-height: 1.7; color: var(--muted); max-width: 550px; margin: 0; }
+div[class*="st-key-section-"] { border-top: 1px solid #34403a; padding: 2.4rem 0 2.8rem; }
+.section-heading { display: grid; grid-template-columns: 3.6rem 1fr; gap: 1.2rem; margin-bottom: 1.2rem; }
+.section-number { color: #94a394; font-size: 1.4rem; font-weight: 400; font-variant-numeric: tabular-nums; padding-top: .05rem; }
+.section-heading .eyebrow { margin-bottom: .8rem; }
+.section-heading h2 { font-size: clamp(1.45rem, 2.7vw, 2rem); line-height: 1.4; font-weight: 500; letter-spacing: -.025em; padding: 0; margin: 0; max-width: 870px; color: var(--ink); }
+.chart-placeholder { min-height: 325px; padding: 2rem; background: #17211d; border: 1px dashed #435447; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: .65rem; }
+.placeholder-symbol { font-size: 1.8rem; color: var(--accent); margin-bottom: .5rem; }
+.placeholder-title { font-size: 1rem; font-weight: 500; color: #dce4d9; }
+.placeholder-note { font-size: .875rem; color: var(--muted); }
+footer { border-top: 1px solid #34403a; padding: 1.5rem 0; color: var(--muted); font-size: .8rem; display: flex; justify-content: space-between; gap: 1rem; }
+@media (max-width: 640px) {
+  .stMainBlockContainer { padding: 1.4rem 1.2rem; }
+  .masthead { flex-wrap: wrap; }
+  .intro { padding: 2.5rem 0 2rem; }
+  .section-heading { grid-template-columns: 2rem 1fr; gap: .6rem; }
+  .section-number { font-size: 1.1rem; }
+  .eyebrow { font-size: .75rem; letter-spacing: .09em; }
+  .chart-placeholder { min-height: 260px; padding: 1.3rem; }
+  footer { flex-direction: column; }
+}
